@@ -1,0 +1,11 @@
+Package: bruma-release
+Version: 1.0
+Architecture: all
+Maintainer: noeljabraham <noeljabraham@gmail.com>
+Installed-Size: 11
+Section: unknown
+Priority: optional
+Homepage: <insert the upstream URL, if relevant>
+Description: Bruma Linux identity package
+ Bruma Linux base identity and branding package.
+ Provides basic system identification files.
