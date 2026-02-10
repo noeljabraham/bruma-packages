@@ -1,0 +1,10 @@
+Package: bruma-artwork
+Version: 1.0
+Architecture: all
+Maintainer: noel <noel@unknown>
+Installed-Size: 2853
+Section: unknown
+Priority: optional
+Homepage: <insert the upstream URL, if relevant>
+Description: Bruma OS artwork
+ Logos, wallpapers and visual branding for Bruma OS.

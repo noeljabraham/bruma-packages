@@ -1,0 +1,21 @@
+Source: bruma-artwork
+Section: unknown
+Priority: optional
+Maintainer: noel <noel@unknown>
+Rules-Requires-Root: no
+Build-Depends:
+ debhelper-compat (= 13),
+Standards-Version: 4.7.2
+Homepage: <insert the upstream URL, if relevant>
+#Vcs-Browser: https://salsa.debian.org/debian/bruma-artwork
+#Vcs-Git: https://salsa.debian.org/debian/bruma-artwork.git
+
+Package: bruma-artwork
+Architecture: all
+Depends:
+ ${shlibs:Depends},
+ ${misc:Depends},
+Description: Bruma OS artwork
+ Logos, wallpapers and visual branding for Bruma OS.
+
+
