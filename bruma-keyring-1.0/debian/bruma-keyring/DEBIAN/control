@@ -1,0 +1,10 @@
+Package: bruma-keyring
+Version: 1.0
+Architecture: all
+Maintainer: noeljabraham <noeljabraham@gmail.com>
+Installed-Size: 13
+Section: misc
+Priority: optional
+Homepage: <insert the upstream URL, if relevant>
+Description: Bruma archive keyring
+ Bruma APT repository signing keyring.

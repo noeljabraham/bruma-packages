@@ -1,0 +1,31 @@
+Format: 1.8
+Date: Mon, 09 Feb 2026 14:02:53 -0500
+Source: bruma-desktop-kde
+Binary: bruma-desktop-kde
+Architecture: source all
+Version: 1.0
+Distribution: unstable
+Urgency: medium
+Maintainer: noeljabraham <noeljabraham@gmail.com>
+Changed-By: noeljabraham <noeljabraham@gmail.com>
+Description:
+ bruma-desktop-kde - Bruma KDE desktop
+Changes:
+ bruma-desktop-kde (1.0) unstable; urgency=medium
+ .
+   * Initial release. (Closes: #nnnn)  <nnnn is the bug number of your ITP>
+Checksums-Sha1:
+ 9fe25fc98e7670f2927727e3fe5901664d00a70a 563 bruma-desktop-kde_1.0.dsc
+ 8731646d6cb004b54c652e36c49f9b7bccb4d13b 2252 bruma-desktop-kde_1.0.tar.xz
+ 7ccb00b39970595164542a6fec8361db9a40a237 2268 bruma-desktop-kde_1.0_all.deb
+ df3050446a14ceb3e0f8cf056b0302244fab5e2c 4769 bruma-desktop-kde_1.0_amd64.buildinfo
+Checksums-Sha256:
+ ecc8c3f9a2ddbfda58fa6462d877caf1b6c1b8b04d8aaf9975dd53669a36dfb2 563 bruma-desktop-kde_1.0.dsc
+ 8113cc868cd544a480fbe629cef8b60846634a807ce41d4b45590ae0f4c5e492 2252 bruma-desktop-kde_1.0.tar.xz
+ f9ccba344bbc401470678892186c7d0f8e971c09f6f3420b24e57dd21f605776 2268 bruma-desktop-kde_1.0_all.deb
+ c16c7cb39ab12015bed118e1a3110fab1fe4b13c8a35f8aa80d08f00e1f86565 4769 bruma-desktop-kde_1.0_amd64.buildinfo
+Files:
+ a7c08a8fb22d6f3df6f202039eb89740 563 misc optional bruma-desktop-kde_1.0.dsc
+ 66c4c5c0eca1062c0a3cd30112dd3a55 2252 misc optional bruma-desktop-kde_1.0.tar.xz
+ 3d329ac4648676bd6043c00983b904f3 2268 misc optional bruma-desktop-kde_1.0_all.deb
+ b79e8645224471476c7c955f0aade990 4769 misc optional bruma-desktop-kde_1.0_amd64.buildinfo

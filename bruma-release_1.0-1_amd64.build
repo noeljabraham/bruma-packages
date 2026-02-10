@@ -1,0 +1,19 @@
+ dpkg-buildpackage -us -uc -ui
+dpkg-buildpackage: info: source package bruma-release
+dpkg-buildpackage: info: source version 1.0-1
+dpkg-buildpackage: info: source distribution UNRELEASED
+dpkg-buildpackage: info: source changed by noel <noeljabraham@gmail.com>
+ dpkg-source --before-build .
+dpkg-buildpackage: info: host architecture amd64
+ debian/rules clean
+dh clean
+   dh_clean
+ dpkg-source -b .
+dpkg-source: info: using source format '3.0 (quilt)'
+dpkg-source: info: building bruma-release using existing ./bruma-release_1.0.orig.tar.xz
+dpkg-source: info: local changes detected, the modified files are:
+ bruma-release-1.0/bruma-release/etc/issue
+dpkg-source: error: aborting due to unexpected upstream changes, see /tmp/bruma-release_1.0-1.diff.aAhZH3
+dpkg-source: hint: make sure the version in debian/changelog matches the unpacked source tree
+dpkg-source: hint: you can integrate the local changes with dpkg-source --commit
+dpkg-buildpackage: error: dpkg-source -b . subprocess returned exit status 2

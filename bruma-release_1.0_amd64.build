@@ -1,0 +1,58 @@
+ dpkg-buildpackage -us -uc -ui
+dpkg-buildpackage: info: source package bruma-release
+dpkg-buildpackage: info: source version 1.0
+dpkg-buildpackage: info: source distribution UNRELEASED
+dpkg-buildpackage: info: source changed by noel <noeljabraham@gmail.com>
+ dpkg-source --before-build .
+dpkg-buildpackage: info: host architecture amd64
+ debian/rules clean
+dh clean
+   dh_clean
+ dpkg-source -b .
+dpkg-source: info: using source format '3.0 (native)'
+dpkg-source: info: building bruma-release in bruma-release_1.0.tar.xz
+dpkg-source: info: building bruma-release in bruma-release_1.0.dsc
+ debian/rules binary
+dh binary
+   dh_update_autotools_config
+   dh_autoreconf
+   create-stamp debian/debhelper-build-stamp
+   dh_prep
+   dh_auto_install --destdir=debian/bruma-release/
+   dh_install
+   dh_installdocs
+   dh_installchangelogs
+   dh_perl
+   dh_link
+   dh_strip_nondeterminism
+   dh_compress
+   dh_fixperms
+   dh_missing
+   dh_installdeb
+   dh_gencontrol
+dpkg-gencontrol: warning: Depends field of package bruma-release: substitution variable ${shlibs:Depends} used, but is not defined
+   dh_md5sums
+   dh_builddeb
+dpkg-deb: building package 'bruma-release' in '../bruma-release_1.0_all.deb'.
+ dpkg-genbuildinfo -O../bruma-release_1.0_amd64.buildinfo
+ dpkg-genchanges -O../bruma-release_1.0_amd64.changes
+dpkg-genchanges: info: including full source code in upload
+ dpkg-source --after-build .
+dpkg-buildpackage: info: full upload; Debian-native package (full source is included)
+Now running lintian bruma-release_1.0_amd64.changes ...
+E: bruma-release: changelog-is-dh_make-template [usr/share/doc/bruma-release/changelog.gz:1]
+E: bruma-release: copyright-contains-dh_make-todo-boilerplate
+E: bruma-release source: debian-rules-is-dh_make-template [debian/rules:22]
+E: bruma-release: helper-templates-in-copyright
+E: bruma-release: section-is-dh_make-template
+W: bruma-release source: bad-homepage <insert the upstream URL, if relevant>
+W: bruma-release: bad-homepage <insert the upstream URL, if relevant>
+W: bruma-release: copyright-has-url-from-dh_make-boilerplate
+W: bruma-release source: dh-make-template-in-source [debian/upstream.ex/]
+W: bruma-release source: no-nmu-in-changelog [debian/changelog:1]
+W: bruma-release source: source-nmu-has-incorrect-version-number 1.0 [debian/changelog:1]
+W: bruma-release source: space-in-std-shortname-in-dep5-copyright <special license> [debian/copyright:11]
+W: bruma-release source: superfluous-clutter-in-homepage <insert the upstream URL, if relevant>
+W: bruma-release: superfluous-clutter-in-homepage <insert the upstream URL, if relevant>
+W: bruma-release: wrong-bug-number-in-closes #nnnn [usr/share/doc/bruma-release/changelog.gz:3]
+Finished running lintian.
