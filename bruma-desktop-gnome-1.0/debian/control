@@ -1,0 +1,25 @@
+Source: bruma-desktop-gnome
+Section: misc
+Priority: optional
+Maintainer: noeljabraham <noeljabraham@gmail.com>
+Rules-Requires-Root: no
+Build-Depends: debhelper-compat (= 13)
+Standards-Version: 4.7.2
+
+Package: bruma-desktop-gnome
+Architecture: all
+Depends: ${misc:Depends},
+ bruma-release,
+ bruma-keyring,
+ gnome,
+ gdm3,
+ network-manager,
+ firefox-esr,
+ libreoffice,
+ vlc,
+ gimp,
+ file-roller,
+ fonts-dejavu
+Description: Bruma GNOME desktop
+ Bruma GNOME desktop and common applications.
+

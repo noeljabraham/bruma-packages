@@ -1,0 +1,10 @@
+Package: bruma-desktop-gnome
+Version: 1.0
+Architecture: all
+Maintainer: noeljabraham <noeljabraham@gmail.com>
+Installed-Size: 9
+Depends: bruma-release, bruma-keyring, gnome, gdm3, network-manager, firefox-esr, libreoffice, vlc, gimp, file-roller, fonts-dejavu
+Section: misc
+Priority: optional
+Description: Bruma GNOME desktop
+ Bruma GNOME desktop and common applications.

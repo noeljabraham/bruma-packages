@@ -1,0 +1,10 @@
+Package: bruma-desktop-kde
+Version: 1.0
+Architecture: all
+Maintainer: noeljabraham <noeljabraham@gmail.com>
+Installed-Size: 9
+Depends: bruma-release, bruma-keyring, kde-standard, sddm, network-manager, firefox-esr, libreoffice, vlc, gimp, ark, fonts-dejavu
+Section: misc
+Priority: optional
+Description: Bruma KDE desktop
+ Bruma KDE Plasma desktop and common applications.
