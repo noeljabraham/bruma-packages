@@ -65,5 +65,9 @@ If you want to learn Linux distribution building or customization, feel free to 
 
 ---
 
-## Repository Structure (Simplified)
+## License
+
+This project is licensed under the MIT License.  
+See the [LICENSE](https://github.com/noeljabraham/bruma-packages/blob/main/LICENSE) file for details.
+
 
